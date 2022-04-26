@@ -1,0 +1,22 @@
+<view class="headPortrait">
+  <view class="textContent" bindtap="chooseImg" >编辑</view>
+	<image class="userAvatar" src="{{ userInfo.avatar }}"></image>
+</view>
+
+<view class="contentWarp" >
+  <view class="myInfoWrap">
+    <view class="text"> {{ "昵称: "}} </view> 
+    <input class="titleInput" value="{{userInfo.nickname}}" placeholder="请输入昵称" bindinput="getNickname"></input>
+  </view>
+  <view class="myInfoWrap">
+    <view class="text"> {{ "年级: "}} </view> 
+    <input class="titleInput"  value="{{userInfo.grade}}"  placeholder="年级" bindinput="getGrade">{{}}</input>
+  </view>
+  <view class="myInfoWrap">
+    <view class="text"> {{ "联系方式: "}} </view> 
+    <input class="titleInput" value="{{userInfo.phone}}"  placeholder="联系方式" bindinput="getContact">{{}}</input>
+  </view>
+  
+  
+  <button form-type='submit' class='myInfoChange' bindtap = "InfoChange">修改</button>
+</view>

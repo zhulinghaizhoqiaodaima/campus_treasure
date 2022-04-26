@@ -1,0 +1,16 @@
+<view class="page">
+  <image class="good_img" mode="aspectFill" src="{{goodsDetail.goodsImg}}"></image>
+  <view class="top_info">
+    <view class="good_title">{{goodsDetail.category}}</view>
+   
+    <view class="goodPhone"><text class="phoneText" >联系方式</text>{{" "+goodsDetail.contactInfo}}</view>
+    <view class="goodsState">{{"地点: "+goodsDetail.place}}</view>
+    <view class="goodsState">{{"发布时间:"+ goodsDetail.time}}</view>
+    <view></view>
+  </view>
+  <view class="good_detail">
+    <view class="good_detail_title">备注信息</view>
+    <view class="good_detail_context">{{goodsDetail.remarks}}</view>
+  </view>
+</view>
+

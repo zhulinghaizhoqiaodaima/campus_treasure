@@ -1,0 +1,158 @@
+/**
+下拉选择分类框
+**/
+page {
+  background-color: #f6f7f9;
+  position: relative;
+}
+
+.contain {
+  display: flex;
+  /* position: fixed; */
+}
+
+.select_box {
+  line-height: 80rpx;
+
+}
+
+.select_tab {
+  width: 250rpx;
+  background-color: #fff;
+  /* background-color: #969799; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+  border-bottom-right-radius: 20rpx;
+}
+
+.option_list {
+  width: 250rpx;
+  background-color: #fff;
+  /* background-color: #1296db; */
+  position: absolute;
+  z-index: 10;
+}
+
+.option_item {
+  color: #888;
+  text-align: center;
+}
+
+.arrow {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.active {
+  color: #1296db;
+}
+
+.active_option {
+  color: #1296db;
+  background-color: #e5f2ff;
+}
+
+.tips {
+  line-height: 2;
+  background-color: #fff;
+  margin-top: 50rpx;
+  padding: 40rpx;
+}
+
+/* 动画效果 */
+@keyframes slideup {
+  from {
+    max-height: 600rpx;
+  }
+
+  to {
+    max-height: 0;
+  }
+}
+
+.slideup {
+  animation: slideup 0.2s ease-in both;
+}
+
+@keyframes slidedown {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 600rpx;
+  }
+}
+
+.slidedown {
+  animation: slidedown 0.2s ease-in both;
+}
+
+
+
+
+
+/*Goods列表  */
+.goodsList {
+  margin-top: 8rpx;
+  background-color: #fff;
+  padding-top: 5rpx;
+  padding-left: 20rpx;
+}
+
+.goods_list {
+  background-color: #f6f7f9;
+  margin-bottom: 10rpx;
+}
+
+
+.goodsWarp {
+  display: flex;
+  align-items: center;
+  /* background-color: #ffffff; */
+  height: 250rpx;
+  margin-top: 5rpx;
+}
+
+.goodsImg {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 15rpx;
+}
+
+.goodRoot {
+  margin-left: 15rpx;
+  display: inline-block;
+}
+
+.goodsTitle {
+  font-weight: bolder;
+  font-size: 40rpx;
+  margin-top: -15rpx;
+  margin-left: 5rpx;
+  margin-bottom: 75rpx;
+}
+.goodsPhone {
+  margin-left: 130rpx;
+
+}
+
+.goodsTime{
+  margin-top: 35rpx;
+  font-size: 22rpx;
+  color: #969799;
+  margin-left: 140rpx;
+}
+
+.noData {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  font-size: 40rpx;
+  overflow-y: hidden;
+  margin: 100rpx;
+  color: #999;
+}

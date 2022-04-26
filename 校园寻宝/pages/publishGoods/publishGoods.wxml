@@ -1,0 +1,40 @@
+<form>
+
+  <view class="title">
+    <input class="titleInput" placeholder="请输入标题" bindinput="getTitle" value="{{goodsName}}"></input>
+  </view>
+  <view class='title'>
+    <picker bindchange="bindGoodsChange" value="{{index}}" range="{{goodsStateArr}}">
+      <input type='text' value='{{goodsStateArr[index]}}' placeholder="物品状态"></input>
+    </picker>
+  </view>
+  <view class='title'>
+    <picker bindchange="bindGoodsType" value="{{categoryIndex}}" range="{{category}}">
+      <input type='text' value='{{category[categoryIndex]}}' placeholder="物品分类"></input>
+    </picker>
+  </view>
+  <view class="title">
+    <input class="getPlace" placeholder="获取地点" bindtap="onChangeAddress" value='{{chooseAddress}}'>
+    </input>
+  </view>
+  <view class="title">
+    <input class="titleInput" placeholder="联系方式" bindinput="getContact" value='{{contactInfo}}'></input>
+  </view>
+
+  <view class="title">
+    <textarea class="textInput" maxlength="60" placeholder="信息备注->限60字" bindinput="getRemark"
+      value='{{remark}}' ></textarea>
+  </view>
+
+  <!--上传图片-->
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd">
+      <view class='pic' wx:if="{{goodsImg}}">
+        <image class='weui-uploader__img ' src="{{goodsImg}}">
+        </image>
+      </view>
+    </view>
+    <button class="upload-img-btn" bindtap="chooseImg" type='primary'>拍照 / 上传</button>
+  </view>
+  <button class='sureRelease' bindtap="ConfirmInfo">确认发布</button>
+</form>

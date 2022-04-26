@@ -1,0 +1,13 @@
+
+<view class='nothing'  wx:if="{{!isShowInfo}}">
+	<label class='none_tab'>没有匹配到物品哦~~</label>
+</view>
+
+<view class='nothing'  wx:if="{{isShowInfo}}">
+	<view class="title">
+		<view class="titleInput">{{"拾取人昵称: " +  name}}</view>
+	</view>
+	<view class="title">
+		<view class="titleInput">{{"拾取人联系方式: "+ phone}}</view>
+	</view>
+</view>

@@ -1,0 +1,196 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 搜索 */
+.weui-search-bar {
+	position: relative;
+	padding: 8px 10px;
+	display: flex;
+	box-sizing: border-box;
+	background-color: #EFEFF4;
+	border-top: 1rpx solid #D7D6DC;
+	border-bottom: 1rpx solid #D7D6DC;
+}
+.weui-icon-search_in-box {
+	position: absolute;
+	left: 10px;
+	top: 7px;
+}
+.weui-search-bar__form {
+	position: relative;
+	flex: auto;
+	border-radius: 5px;
+	background: #FFFFFF;
+	border: 1rpx solid #E6E6EA;
+}
+.weui-search-bar__box {
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.weui-search-bar__input {
+	height: 28px;
+	line-height: 28px;
+	font-size: 14px;
+}
+.weui-search-bar__cancel-btn {
+	margin-left: 10px;
+	line-height: 28px;
+	color: #09BB07;
+	white-space: nowrap;
+}
+/* 轮播图区域 */
+.bd .wx-swiper-dots.wx-swiper-dots-horizontal {
+	margin-bottom: 2rpx;
+}
+.bd .wx-swiper-dot {
+	width: 40rpx;
+	/*点的长*/
+	display: inline-flex;
+	height: 10rpx;
+	/*点的高*/
+	margin-left: 5rpx;
+	/*两个点的距离*/
+	justify-content: space-between;
+}
+.bd .wx-swiper-dot::before {
+	content: '';
+	flex-grow: 1;
+	background: #d7d7d7;
+	/*点的未选中颜色*/
+	border-radius: 8rpx
+}
+.bd .wx-swiper-dot-active::before {
+	background: #ff8f00;
+	/*点的选中颜色*/
+}
+/* 功能区 */
+.section {
+	margin-top: 60rpx;
+	background-color: #f6f7f9;
+	border-radius: 30rpx;
+}
+.tui-table-view {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.tui-col-3 {
+	flex: 0 0 auto;
+	width: 33.33333333%;
+	text-align: center;
+	color: #797979;
+	padding: 40rpx 0;
+	font-size: 30rpx;
+}
+.category_item_image {
+	height: 100rpx;
+	width: 100rpx;
+}
+.text {
+	font-size: 11px;
+	font-weight: bolder;
+}
+

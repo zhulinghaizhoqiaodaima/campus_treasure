@@ -1,0 +1,18 @@
+<view id="total">
+  <image src="../../imgs/title.png"></image>
+  <form bindsubmit="create_login">
+    <view class="Sno public_css">
+      <text>学号</text>
+      <input type="text" name="username"  placeholder="输入学号" value="{{username}}"></input>
+    </view>
+    <view class="pwd public_css">
+      <text>密码</text><input type="password" name="password" placeholder="输入密码" value="{{password}}"></input>
+    </view>
+    <button bindtap="goto_index" id="btn1" form-type="submit"><text>登陆</text></button>
+    
+  </form>
+
+  <view class="btn_wrap">
+    <button bindtap="register" class="user_register"><text>注册</text></button>
+  </view>
+</view>

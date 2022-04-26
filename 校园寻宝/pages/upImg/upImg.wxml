@@ -1,0 +1,13 @@
+  <!--上传图片-->
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd">
+      <view class='pic'>
+          <image class='weui-uploader__img '
+                  src="{{img}}" mode="aspectFill" bindtap="previewImg">
+                    <icon type='cancel' class="delete-btn" catchtap="deleteImg"></icon>
+          </image>
+      </view>
+    </view>
+    <button class="upload-img-btn" bindtap="chooseImg" type='primary'>拍照  / 上传</button>
+  </view>
+  <button form-type='submit' class='sureRelease' bindtap = "UpLoadImg">确认发布</button>

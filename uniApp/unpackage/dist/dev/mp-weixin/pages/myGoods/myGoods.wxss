@@ -1,0 +1,78 @@
+
+page {
+	position: relative;
+}
+
+/* 列表内容 */
+.list .txt {
+	flex-grow: 1;
+	width: 100%;
+	margin-left: -150rpx;
+}
+
+/* 删除按钮 */
+.list .del {
+	flex-grow: 0;
+	width: 150rpx;
+	height: 220rpx;
+	color: #fff;
+	background-color: #fe3e2f;
+	line-height: 220rpx;
+	text-align: center;
+}
+.list .txt,
+.list .del {
+	-webkit-transform: translateX(150rpx);
+	        transform: translateX(150rpx);
+	transition: all 0.4s;
+}
+.touch-move-active .txt,
+.touch-move-active .del {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+
+/*Goods列表  */
+.goodsList {
+	margin-top: 8rpx;
+	background-color: #f6f7f9;
+	padding-top: 5rpx;
+	padding-left: 20rpx;
+}
+.goods_list {
+	background-color: #f6f7f9;
+	margin-bottom: 10rpx;
+}
+.goodsWarp {
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	height: 250rpx;
+	margin-top: 10rpx;
+}
+.goodsImg {
+	width: 220rpx;
+	height: 220rpx;
+	border-radius: 15rpx;
+}
+.goodRoot {
+	margin-left: 15rpx;
+	display: inline-block;
+}
+.goodsTitle {
+	font-weight: bolder;
+	font-size: 40rpx;
+	margin-top: -15rpx;
+	margin-left: 5rpx;
+	margin-bottom: 75rpx;
+}
+.goodsPhone {
+	margin-left: 130rpx;
+}
+.goodsTime {
+	margin-top: 35rpx;
+	font-size: 22rpx;
+	color: #969799;
+	margin-left: 140rpx;
+}
+

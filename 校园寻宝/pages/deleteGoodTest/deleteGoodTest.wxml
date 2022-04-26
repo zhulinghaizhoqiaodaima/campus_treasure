@@ -1,0 +1,21 @@
+<scroll-view scroll-y enable-back-to-top :style='height:{{ scrollHeight }}px;'>
+  <view class="goodsList">
+    <block class="goods_list" wx:for="{{Goods}}" wx:key="index" wx:for-item="item" 
+      wx:for-index="index">
+      <view class="goodsWarp list {{ item.isTouchMove ? 'touch-move-active' : '' }} " data-id="{{item.goodsId}}"
+      bindtouchstart="touchStart" bindtouchmove="touchMove" >
+          <view class="txt">
+            <image class="goodsImg" mode="aspectFill" src="{{ item.goodsImg}}" />
+            <view class="goodRoot">
+              <view class="goodsTitle">{{item.goodsName}}</view>
+              <view class="containStepper">
+                <view class="goodsPhone">{{"联系方式: "+ item.contactInfo}}</view>
+                <view class="goodsTime">{{"发布时间" + item.time}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="del" bindtap="delGoods" data-index="{{ item.goodsId }}"> 删除 </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
