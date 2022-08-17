@@ -6,13 +6,8 @@ import com.zbt.springboot.mapper.GoodsMapper;
 import org.springframework.stereotype.Service;
 import com.zbt.springboot.entity.Goods;
 
-import java.util.List;
-
-
 @Service
 public class GoodsService extends ServiceImpl<GoodsMapper,Goods> {
-
-
     //更新物品信息
     public boolean updateGoods(Goods one) {
 

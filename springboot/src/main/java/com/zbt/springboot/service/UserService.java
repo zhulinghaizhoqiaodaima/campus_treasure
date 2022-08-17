@@ -18,7 +18,6 @@ public class UserService extends ServiceImpl<UserMapper,User> {
     public User saveUser(User one) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("stuNum",one.getStuNum());
-//        System.out.println(queryWrapper+"===================");
         if (getOne(queryWrapper) == null) {
             save(one);
         }else {
